@@ -21,7 +21,7 @@ Destroying a session
   ```
 
 ###### Users
-Retreive all of the current user's information
+Retrieve all of the current user's information
   ```
   GET https://eies.herokuapp.com/api/v1/users/USER_ID?session_id=SESSION_ID
   ```
@@ -35,13 +35,13 @@ Create a new key
   ```
   POST https://eies.herokuapp.com/api/v1/keys?session_id=SESSION_ID&name=NAME&body=BODY
   ```
-Retreive a key
+Retrieve a key
   ```
   GET https://eies.herokuapp.com/api/v1/keys/KEY_ID?session_id=SESSION_ID
   ```
 Update a key
   ```
-  PUT https://eies.herokuapp.com/api/v1/keys?session_id=SESSION_ID&name=NAME&body=BODY
+  PUT https://eies.herokuapp.com/api/v1/keys/KEY_ID?session_id=SESSION_ID&name=NAME&body=BODY
   ```
 Destroy a key
   ```
@@ -53,13 +53,13 @@ Create a new entity
   ```
   POST https://eies.herokuapp.com/api/v1/entities?session_id=SESSION_ID&name=NAME&domain=DOMAIN&port=PORT
   ```
-Retreive an entity
+Retrieve an entity
   ```
   GET https://eies.herokuapp.com/api/v1/entities/ENTITY_ID?session_id=SESSION_ID
   ```
 Update an entity
   ```
-  PUT https://eies.herokuapp.com/api/v1/entities?session_id=SESSION_ID&name=NAME&domain=DOMAIN&port=PORT
+  PUT https://eies.herokuapp.com/api/v1/entities/ENTITY_ID?session_id=SESSION_ID&name=NAME&domain=DOMAIN&port=PORT
   ```
 Destroy an entity
   ```
@@ -71,7 +71,7 @@ Create a new entity token
   ```
   POST https://eies.herokuapp.com/api/v1/entity_tokens?session_id=SESSION_ID&entity_id=ENTITY_ID&key_id=KEY_ID
   ```
-Retreive an entity token
+Retrieve an entity token
   ```
   GET https://eies.herokuapp.com/api/v1/entity_tokens/ENTITY_TOKEN_ID?session_id=SESSION_ID
   ```
